@@ -9,6 +9,7 @@ module.exports = {
   extends: [
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'airbnb', 'prettier'
   ],
   root: true,
   env: {
@@ -20,8 +21,11 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-          useTabs: true,
-          endOfLine: 'auto'
+          useTabs: false,
+          endOfLine: 'auto',
+          'import/prefer-default-export': 'off',
+          'import/extensions': ['off'],
+          'linebreak-style': 0,
       },
   ],
     '@typescript-eslint/interface-name-prefix': 'off',

@@ -4,6 +4,6 @@ export class CreateBoardDto {
     @IsNotEmpty()
     title: string;
 
-    @IsNotEmpty()
+	@IsNotEmpty()
     description: string;
 }
